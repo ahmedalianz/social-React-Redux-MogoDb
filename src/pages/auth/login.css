@@ -1,0 +1,37 @@
+.login-background {
+  background: url("https://source.unsplash.com/random"), url(./back.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.signup-back {
+  align-items: center;
+  background-color: var(--white);
+  background: url("https://source.unsplash.com/random"), url(./back.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+.signup-box {
+  background-color: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25),
+    0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+  width: 100%;
+}
+.email-err {
+  color: red;
+  margin-left: 18px;
+}

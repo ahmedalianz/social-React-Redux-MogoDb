@@ -1,0 +1,193 @@
+.rightbar-container {
+  flex: 3;
+  height: calc(100vh - 60px);
+  box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  position: sticky;
+  overflow-y: scroll;
+  top: 60px;
+  padding: 10px 0;
+  margin-left: 5px;
+}
+
+.rightbar-wrapper {
+  padding: 10px;
+}
+.birthday {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.birthday img {
+  width: 30px;
+  height: 30px;
+}
+
+.birthday-text {
+  margin-left: 5px;
+}
+
+.rightbar-ad {
+  width: 100%;
+  padding-top: 10px;
+  border-radius: 15px;
+}
+.rightbar-connected {
+  position: relative;
+}
+
+.rightbar-friends-container {
+  background-color: white;
+  margin: 10px 0;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.rightbar-friends {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+.rightbar-friend {
+  margin: 10px 0;
+}
+
+.rightbar-friend img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 5px;
+}
+
+.rightbar-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.rightbar-info {
+  margin-bottom: 30px;
+}
+.info-head {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.rightbar-info-item {
+  margin-bottom: 10px;
+}
+
+.rightbar-info-item-key {
+  margin-right: 15px;
+  font-weight: 500;
+  color: rgb(151, 143, 143);
+}
+
+.rightbar-info-item-value {
+  font-weight: 500;
+  color: rgb(228, 102, 102);
+}
+
+.rightbar-follower img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.rightbar-followers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.rightbar-follower {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.menu-bars2 {
+  display: none;
+}
+@media screen and (max-width: 1170px) {
+  .rightbar-container {
+    flex: 2;
+  }
+}
+@media screen and (max-width: 912px) {
+  .birthday-text {
+    font-size: 13px;
+  }
+  .rightbar-friends-container {
+    margin: 5px 0;
+    padding: 5px 0;
+  }
+
+  .rightbar-friends {
+    margin: 0 5px;
+  }
+
+  .rightbar-friend {
+    margin: 5px 0;
+  }
+
+  .rightbar-title {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 5px;
+  }
+  .rightbar-friends-container h5 {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .rightbar-connected span {
+    top: 20px;
+    left: 10px;
+  }
+  .rightbar-friends {
+    margin: 0 5px;
+  }
+
+  .rightbar-friend {
+    margin: 5px 0;
+  }
+
+  .rightbar-friend img {
+    width: 30px;
+    height: 30px;
+  }
+  .rightbar-disappear {
+    display: none;
+  }
+  .rightbar-show {
+    display: block;
+    position: absolute;
+    z-index: 30;
+    background-color: white;
+    animation: side2 1s ease-in-out;
+    width: 50%;
+    height: 80%;
+  }
+  .menu-bars2 {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 21;
+  }
+}
+@keyframes side2 {
+  0% {
+    left: -400px;
+  }
+  100% {
+    left: 0;
+  }
+}

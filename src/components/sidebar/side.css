@@ -1,0 +1,116 @@
+.sidebar-container {
+  flex: 2;
+  height: calc(100vh - 60px);
+  box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  overflow-y: scroll;
+  position: sticky;
+  top: 60px;
+  margin-right: 5px;
+}
+.sidebar-wrapper {
+  padding: 10px;
+}
+.menu-container {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  padding: 0 0 0 15px;
+}
+
+.menu-item {
+  margin: 15px 0;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: white;
+  padding: 10px;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.menu-item:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.menu-text {
+  margin-left: 10px;
+}
+.menu-bars {
+  display: none;
+}
+@media screen and (max-width: 1230px) {
+  .sidebar-container {
+    flex: 2;
+  }
+}
+@media screen and (max-width: 912px) {
+  .menu-text {
+    margin-left: 5px;
+    font-size: 13px;
+  }
+  .menu-container {
+    margin: 5px 0;
+    padding: 0 0 0 8px;
+  }
+  .menu-item {
+    margin: 8px 0;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 695px) {
+  .menu-text {
+    text-align: center;
+    font-size: 12px;
+  }
+  .menu-icon {
+    margin: 0 12px;
+    display: flex;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sidebar-container {
+    flex: 1.5;
+  }
+  .menu-text {
+    margin: 0;
+  }
+  .menu-icon {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 460px) {
+  .side-disappear {
+    display: none;
+  }
+  .side-show {
+    display: block;
+    position: absolute;
+    z-index: 30;
+    background-color: white;
+    animation: side 1s ease-in-out;
+  }
+  .menu-bars {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 21;
+  }
+}
+@keyframes side {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 0;
+  }
+}

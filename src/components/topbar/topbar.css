@@ -1,0 +1,160 @@
+.topbar-container {
+  height: 60px;
+  width: 100%;
+  background-color: #1877f2;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.topbar-left {
+  flex: 3;
+}
+
+.topbar-logo img {
+  width: 180px;
+  padding: 10px 15px;
+}
+
+.topbar-center {
+  flex: 5;
+}
+
+.topbar-right {
+  flex: 3;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  padding: 1rem 3rem;
+}
+
+.topbar-icons {
+  display: flex;
+}
+
+.topbar-links {
+  padding: 0 15px;
+}
+
+.topbar-link {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.topbar-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.topbar-iconItem {
+  padding: 5px;
+  position: relative;
+}
+
+.topbar-iconBadge {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  background-color: red;
+  border-radius: 50%;
+  padding: 1px 4px;
+  font-size: 12px;
+}
+.topbar-profile {
+  display: flex;
+  align-items: center;
+}
+.topbar-profile a {
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+
+.topbar-profile span {
+  text-transform: capitalize;
+}
+.topbar-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 60px;
+  object-fit: cover;
+}
+
+.searched-items {
+  position: absolute;
+  box-shadow: 1px 13px 32px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 13px 32px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 13px 32px 0px rgba(0, 0, 0, 0.75);
+}
+
+.seacrh-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1068px) {
+  .topbar-links {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 677px) {
+  .topbar-icons {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .topbar-right {
+    justify-content: end;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .search-disappear {
+    position: absolute;
+    top: -50px;
+    display: none;
+  }
+  .topbar-profile a {
+    display: none;
+  }
+  .topbar-profile a:last-child {
+    display: none;
+  }
+  .search-show {
+    position: absolute;
+    z-index: 30;
+    display: block;
+    top: 60px;
+    left: 0;
+    animation: search 0.8s ease-in-out;
+    -webkit-animation: search 0.8s ease-in-out;
+  }
+
+  .seacrh-icon {
+    display: block;
+    position: absolute;
+    right: 65px;
+    top: 18px;
+  }
+  .searched-items {
+    top: 100px;
+    left: 50px;
+  }
+}
+
+@keyframes search {
+  0% {
+    top: -150px;
+  }
+  100% {
+    top: 60px;
+    left: 0;
+  }
+}

@@ -1,0 +1,89 @@
+.share-container {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.share-wrapper {
+  padding: 10px;
+}
+.share-top {
+  display: flex;
+  align-items: center;
+}
+.share-profile-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.share-input {
+  width: 80%;
+  border: none;
+  margin-left: 10px;
+  resize: none;
+}
+.share-input:focus {
+  outline: none;
+}
+.share-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.share-options {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.share-dots {
+  display: none;
+}
+.share-option {
+  display: flex;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.share-option-text {
+  margin-left: 5px;
+  font-weight: 300;
+  font-size: 15px;
+}
+.share-line {
+  margin: 25px 15px 15px;
+}
+.share-img-container {
+  padding: 0 20px 10px 20px;
+  position: relative;
+}
+.share-img {
+  width: 100%;
+  padding-top: 5px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.share-cancel-img {
+  position: absolute;
+  top: 2px;
+  right: 25px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+@media screen and (max-width: 1026px) {
+  .share-options > div {
+    display: none;
+  }
+  .share-dots {
+    display: flex;
+  }
+}
+@media screen and (max-width: 450px) {
+  .share-profile-img {
+    width: 50px;
+    height: 50px;
+  }
+  .share-options span {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,27 @@
+.post-comments-container ul{
+    list-style: none;padding:10px 5px;margin: 0;
+}
+.comment-item{
+    display: grid;
+    grid-template-columns:50px 1fr 100px;
+    margin: 10px 0;
+    background-color:rgba(226, 223, 223, 0.527);padding:10px;
+    border-radius:10px
+}
+.comment-left img {
+    width: 100%;
+    object-fit: cover;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.comment-left span {
+padding-left:15px;
+}
+.comment-right{
+    font-size:12px
+}
+.comment-user{
+    text-transform: capitalize;color:red
+}
+.comment-item a{text-decoration:none;}

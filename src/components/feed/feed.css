@@ -1,0 +1,22 @@
+.feed-container{
+    flex: 6;
+    height:calc(100vh - 60px) ;
+    overflow-y: scroll;
+}
+.feed-wrapper{
+    padding:10px;
+}
+.sad-face{
+    display: flex;justify-content: center;align-items: center;flex-direction: column
+}
+.sad-face span{
+    font-size:30px;text-transform: capitalize;
+}
+.sad-face span:first-child{
+    color:red
+}
+@media screen and (max-width:460px){
+    .feed-container{
+        flex:8
+    }
+}
