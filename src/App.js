@@ -16,11 +16,12 @@ export default function App() {
     useEffect(() => {
         if (isLoggedInLocalStorage) {
             currentUser=JSON.parse(localStorage.getItem('currentUser'))
+            dispatch(editUser({user:currentUser}))
         }
         else if (isLoggedInSessionStorage) {
             currentUser=JSON.parse(sessionStorage.getItem('currentUser'))
+            dispatch(editUser({user:currentUser}))
         }
-        dispatch(editUser({user:currentUser}))
     }, [])
     return (
         <BrowserRouter>
