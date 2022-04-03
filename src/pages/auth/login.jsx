@@ -1,27 +1,30 @@
-import React, { useState } from "react";
+import "./login.css";
+
 import {
   Avatar,
-  Button,
-  CssBaseline,
-  Typography,
-  TextField,
-  Checkbox,
-  Paper,
-  Grid,
-  FormControlLabel,
   Box,
+  Button,
+  Checkbox,
+  CssBaseline,
+  FormControlLabel,
+  Grid,
+  Paper,
+  TextField,
+  Typography,
 } from "@mui/material";
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Link } from "react-router-dom";
-import Copyright from "./copyright";
-import { useDispatch } from "react-redux";
+import React, { useState } from "react";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { editUser, loginFail } from "../../redux/users/user";
-import axios from "axios";
-import "./login.css";
+
+import Copyright from "./copyright";
 import Facebook from "./facebook";
 import Google from "./google";
+import { Link } from "react-router-dom";
+import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import axios from "axios";
 import { toast } from "react-toastify";
+import { useDispatch } from "react-redux";
+
 const theme = createTheme();
 
 export default function LogIn() {
@@ -44,13 +47,9 @@ export default function LogIn() {
       dispatch(editUser({ user: res.data, remembered }));
     } catch (err) {
       console.error(err.response);
-      if (err.response.data.email || err.response.data.password) {
-        setEmailErr(err.response.data.errors.email);
-        setPasswordErr(err.response.data.errors.password);
-        dispatch(loginFail());
-      } else {
-        toast.error("There seems to be some Error with the server");
-      }
+      setEmailErr(err.response.data.errors.email);
+      setPasswordErr(err.response.data.errors.password);
+      dispatch(loginFail());
     } finally {
       setLoading(false);
     }
