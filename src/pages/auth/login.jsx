@@ -36,6 +36,7 @@ export default function LogIn() {
   const [passwordErr, setPasswordErr] = useState("");
   const url = process.env.REACT_APP_URL;
   const dispatch = useDispatch();
+  console.log(url);
   const handleSubmit = async (e) => {
     e.preventDefault();
     setEmailErr("");
