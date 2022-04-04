@@ -2,6 +2,10 @@
 
 ### Running on the following link : [Sprout Social App](https://sprout-social.vercel.app/)
 
+For Fast Testing use the following :
+Email:ahmed@gmail.com
+password:test123
+
 To initiate the application you will need to do 
 
 **npm install**
