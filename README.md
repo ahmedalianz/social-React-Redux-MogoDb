@@ -2,11 +2,7 @@
 
 ### Running on the following link : [Sprout Social App](https://sprout-social.vercel.app/)
 
-For Fast Testing use the following :
-
-Email:ahmed@gmail.com
-
-password:test123
+Currently the backend service is down so removing the backend
 
 To initiate the application you will need to do 
 
