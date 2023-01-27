@@ -1,8 +1,5 @@
 # Sprout Social App
 
-### Running on the following link : [Sprout Social App](https://sprout-social.vercel.app/)
-
-Currently the backend service is down so removing the backend
 
 To initiate the application you will need to do 
 
